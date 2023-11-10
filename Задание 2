@@ -1,0 +1,73 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    setlocale(0, "");
+    double value;
+    int choice;
+    const double SAZHEN_IN_METERS = 2.1366;
+    const double INCH_IN_CENTIMETERS = 2.5;
+    const double FOOT_IN_METERS = 0.3048;
+    const double DRAM_IN_GRAMS = 3.7325;
+    const double OUNCE_IN_GRAMS = 29.86;
+    const double POUND_IN_KILOGRAMS = 0.40951;
+    const double ARSHIN_IN_METERS = 0.7112;
+    const double GOLDMARK_IN_GRAMS = 4.2657;
+    const double INCH_IN_MILLIMETERS = 25.3995;
+
+
+    cout << "Введите значение: ";
+    cin >> value;
+    
+   
+    
+
+        cout << "[1]сфжни";
+        cout << "[2]дюймы";
+        cout << "[3]футы";
+        cout << "[4]драхмы";
+        cout << "[5]унции";
+        cout << "[6]фунтов";
+        cout << "[7]аршины";
+        cout << "[8]золотники";
+        cout << "[9]дюйм";
+        cout << "\nВыберите";
+        cin >> choice;
+       
+   
+    switch (choice)
+    {
+    case 1:
+        cout << value << " саженей = " << value * SAZHEN_IN_METERS << " метров" << endl;
+        break;
+    case 2:
+        cout << value << " дюймов = " << value * INCH_IN_CENTIMETERS << " сантиметров" << endl;
+        break;
+    case 3:
+        cout << value << " футов = " << value * FOOT_IN_METERS << " метров" << endl; 
+            break;
+    case 4:
+        cout << value << " драхм = " << value * DRAM_IN_GRAMS << " граммов" << endl;
+        break;
+    case 5:
+        cout << value << " унций = " << value * OUNCE_IN_GRAMS << " граммов" << endl;
+        break;
+    case 6:
+        cout << value << " фунтов = " << value * POUND_IN_KILOGRAMS << " килограммов" << endl;
+        break;
+    case 7:
+        cout << value << " аршинов = " << value * ARSHIN_IN_METERS << " метров" << endl;
+        break;
+    case 8:
+        cout << value << " золотников = " << value * GOLDMARK_IN_GRAMS << " граммов" << endl;
+        break;
+    case 9:
+        cout << value << " дюймов = " << value * INCH_IN_MILLIMETERS << " миллиметров" << endl;
+        break;
+    default:
+        cout << "Неизвестная единица измерения" << endl;
+        break;
+    }
+    return 0;
+}
